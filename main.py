@@ -60,7 +60,7 @@ class MyWidget(QMainWindow):
             qp.end()
 
     def draw(self, qp):
-        qp.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
+        qp.setBrush(QColor(225, 225, 0))
         r = randint(0, 250)
         qp.drawEllipse(randint(0, 399 - r), randint(0, 561 - r), r, r)
         self.do_paint = False
